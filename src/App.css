@@ -1,0 +1,97 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --main-background: linear-gradient(rgba(112, 149, 167, 0.5), rgba(222, 236, 247, 0.5));
+  --box-shadow: 3px 3px 3px rgba(0,0, 0, 0.5);
+  --search-text-color: rgba(20, 17, 26, 0.5);
+  --temp-background-color:  rgba(144, 169, 180, 0.05);
+}
+
+
+
+
+.app {
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.pexels.com/photos/3783385/pexels-photo-3783385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+.app.warm {
+  background-image: url('https://images.pexels.com/photos/2043035/pexels-photo-2043035.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+}
+.app.cold  {
+  background-image: url('https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+}
+
+.main {
+  width: 400px;
+  min-height: 500px;
+  background: var(--main-background);
+  border-bottom-left-radius: 50px ;
+  border-top-right-radius: 50px ;
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow:  var(--box-shadow);
+}
+
+.show-icon {
+  font-size: 10rem;
+}
+.hide-icon {
+  display: none;
+}
+
+.search-bar {
+  margin-top: 3rem;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  background-color: whitesmoke;
+  outline: none;
+  color:var(--search-text-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.heading > h3 {
+  margin-top: -20px;
+}
+
+.main-temp {
+  max-width: 10vw;
+  height: 10vh;
+  padding: 0.5rem;
+  margin:auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: var(--temp-background-color);
+  border: none;
+  box-shadow: var(--box-shadow);
+ 
+}
+.main-temp::after {
+  opacity:1;
+}
+
+.extreme {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+}
