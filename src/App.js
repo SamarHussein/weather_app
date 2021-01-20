@@ -1,5 +1,5 @@
 import React , {useState  } from 'react';
-import {FaCloudSun, FaCommentsDollar} from 'react-icons/fa';
+import {FaCloudSun} from 'react-icons/fa';
 
 import './App.css';
 
